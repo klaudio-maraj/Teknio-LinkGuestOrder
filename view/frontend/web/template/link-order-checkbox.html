@@ -1,0 +1,10 @@
+<div data-bind="if: isEnabledLinkOrder">
+    <div data-bind="if: !isCustomerLoggedIn()">
+        <div class="field choice">
+            <input type="checkbox" name="link-order" data-bind="checked: isLinkOrderChecked, attr: { id: 'link-order' }"/>
+            <label data-bind="attr: {for: 'link-order'}">
+                <span data-bind="i18n: 'If you already have an account with us, we will link this order to your account so you can easily view and manage it when you log in.'"></span>
+            </label>
+        </div>
+    </div>
+</div>
